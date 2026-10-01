@@ -1,0 +1,31 @@
+{
+  "description": "Swap Caps_Lock & Quote with Esc & Ctrls",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "caps_lock",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "left_control" }],
+      "to_if_alone": [{ "key_code": "escape" }]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "escape",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "caps_lock" }]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "quote",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "right_control" }],
+      "to_if_alone": [{ "key_code": "quote" }]
+    }
+  ]
+}
