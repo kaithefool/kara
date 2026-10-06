@@ -1,0 +1,25 @@
+{
+  "description": "Spacebar to Layer 1",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "spacebar",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to_if_alone": [{ "key_code": "spacebar" }],
+      "to": {
+        "set_variable": {
+          "name": "layer",
+          "value": 1
+        }
+      },
+      "to_after_key_up": {
+        "set_variable": {
+          "name": "layer",
+          "value": 0
+        }
+      }
+    }
+  ]
+}
