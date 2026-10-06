@@ -1,5 +1,5 @@
 {
-  "description": "Swap Caps_Lock & Quote with Esc & Ctrls",
+  "description": "Swap Caps_Lock with Esc & LCtrl",
   "manipulators": [
     {
       "type": "basic",
@@ -17,15 +17,6 @@
         "modifiers": { "optional": ["any"] }
       },
       "to": [{ "key_code": "caps_lock" }]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "quote",
-        "modifiers": { "optional": ["any"] }
-      },
-      "to": [{ "key_code": "right_control" }],
-      "to_if_alone": [{ "key_code": "quote" }]
     }
   ]
 }

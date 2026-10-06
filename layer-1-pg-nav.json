@@ -1,0 +1,65 @@
+{
+  "description": "Layer 1 Page Nav",
+  "manipulators": [
+    {
+      "type": "basic",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "layer",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "n",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "home" }]
+    },
+    {
+      "type": "basic",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "layer",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "m",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "page_down" }]
+    },
+    {
+      "type": "basic",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "layer",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "comma",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "page_up" }]
+    },
+    {
+      "type": "basic",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "layer",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "slash",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "end" }]
+    }
+  ]
+}
