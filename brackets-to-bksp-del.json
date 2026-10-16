@@ -1,0 +1,22 @@
+{
+  "description": "Brackets to Backspace & Delete",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "open_bracket",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "delete_or_backspace" }]
+    },
+
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "close_bracket",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "delete_forward" }]
+    }
+  ]
+}
